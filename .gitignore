@@ -1,0 +1,16 @@
+# Common files
+*.diff
+.DS_Store
+
+# Nodejs
+node_modules
+# Bower compoents
+bower_components
+
+# Auto build assets
+public/css/build
+public/js/build
+public/assets/sprites.html
+# Compiled CSS and JS map files
+*.css.map
+*.js.map
