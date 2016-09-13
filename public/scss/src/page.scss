@@ -1,0 +1,106 @@
+/**
+ * Common layout elements
+ */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: $font-primary;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'kern';
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #FFF;
+  background: linear-gradient(45deg, #0E0438 0%, #3AA4B2 41%, #44F2D7 81%);
+}
+
+main {
+  position: relative;
+  width: $page-width;
+  margin: $default-spacing auto;
+  padding: $default-spacing;
+}
+
+header {
+  text-align: center;
+
+  svg {
+    transition: transform 1s, opacity 1s;
+    opacity: 1;
+  }
+
+  svg:hover {
+    transform: scale(1.2) rotate(-15deg);
+    opacity: 0.4;
+  }
+}
+
+a, a:active, a:hover {
+  color: #FFF;
+}
+
+a:active, a:hover {
+  text-decoration: underline;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+}
+
+.column {
+  flex: 1;
+}
+
+@include tablet {
+  &.is-horizontal {
+    flex-direction: row;
+  }
+
+  .is-3by2 {
+    width: 100%;
+    height: 0;
+    padding-bottom: 66%;
+  }
+
+  .is-one-third {
+    flex-basis: 33%;
+  }
+
+  .is-two-thirds {
+    flex-basis: 66%;
+  }
+
+  .tray.is-right {
+    text-align: right;
+
+    p {
+      display: inline-block;
+      margin: 0 $default-spacing;
+    }
+  }
+}
+
+@include tablet {
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  main  {
+    width: $page-width-tablet;
+  }
+}
+
+@include desktop {
+  main  {
+    width: $page-width-desktop;
+  }
+}

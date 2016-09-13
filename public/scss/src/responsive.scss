@@ -1,0 +1,32 @@
+/**
+ * These are the RootEM values. They use a ViewportWidth value to maintain responsiveness
+ * as the browser window size changes. It is the basis for the calculations for all of
+ * our font-sizes, which are primarily based in REM units.
+ */
+@include mobile {
+  html {
+    border: 1px solid red;
+    font-size: 3.5vmin !important;
+  }
+}
+
+@include tablet {
+  html {
+    border: 1px solid blue;
+    font-size: 1.11vw !important;
+  }
+}
+
+@include desktop {
+  html {
+    border: 1px solid gray;
+    font-size: 1.11vw !important;
+  }
+}
+
+@include widescreen {
+  html {
+    border: 1px solid black;
+    font-size: 1.11vw !important;
+  }
+}

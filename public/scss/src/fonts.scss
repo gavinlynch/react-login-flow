@@ -1,0 +1,50 @@
+/**
+ * Font families
+ */
+@font-face {
+  font-family: 'San Francisco';
+  src: url('/assets/fonts/SanFranciscoText-Regular.woff') format('woff'),
+      url('/assets/fonts/SanFranciscoText-Regular.woff') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco';
+  src: url('/assets/fonts/SanFranciscoText-RegularItalic.woff') format('woff'),
+      url('/assets/fonts/SanFranciscoText-RegularItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco';
+  src: url('/assets/fonts/SanFranciscoText-Bold.woff') format('woff'),
+      url('/assets/fonts/SanFranciscoText-Bold.woff') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'San Francisco';
+  src: url('/assets/fonts/SanFranciscoText-BoldItalic.woff') format('woff'),
+      url('/assets/fonts/SanFranciscoText-BoldItalic.woff') format('truetype');
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'San Francisco';
+  src: url('/assets/fonts/SanFranciscoText-Light.woff') format('woff'),
+      url('/assets/fonts/SanFranciscoText-Light.woff') format('truetype');
+  font-style: normal;
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: 'San Francisco';
+  src: url('/assets/fonts/SanFranciscoText-LightItalic.woff') format('woff'),
+      url('/assets/fonts/SanFranciscoText-LightItalic.woff') format('truetype');
+  font-style: italic;
+  font-weight: lighter;
+}

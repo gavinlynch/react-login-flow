@@ -1,0 +1,17 @@
+/**
+ * Login page
+ */
+#page-login {
+  input[type=email],
+  input[type=password] {
+    width: 100%;
+    color: #FFF;
+  }
+}
+
+@include tablet {
+  .user-credentials {
+    padding: #{$default-spacing * 2};
+  }
+}
+

@@ -1,0 +1,184 @@
+/**
+ * Style form elements
+ */
+form, input {
+  box-sizing: border-box;
+}
+
+form {
+  margin: $default-spacing 0;
+  padding: $default-spacing;
+  font-size: $size-normal;
+}
+
+button,
+input[type=text],
+input[type=email],
+input[type=password] {
+  box-sizing: border-box;
+  margin: #{$default-spacing / 2} 0;
+  padding: $default-spacing;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+}
+
+input.is-light {
+  background-color: rgba(#FFF, 0.3);
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: 0 0 0.3em 0.2em rgba(#000, 0.05);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0.3em 0.2em rgba(#000, 0.15);
+  }
+}
+
+input.is-dark {
+  background-color: rgba(#000, 0.1);
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: 0 0 0.3em 0.2em rgba(#FFF, 0.05);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0.3em 0.2em rgba(#FFF, 0.15);
+  }
+}
+
+.with-icons {
+  position: relative;
+  margin: #{$default-spacing / 2} 0;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 3em;
+    bottom: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.75s;
+  }
+
+  &.has-error:after {
+    opacity: 1;
+  }
+
+  input {
+    padding-left: 4em;
+    margin: 0;
+  }
+
+  svg {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 1em;
+    height: 1em;
+    padding: 1em;
+    cursor: help;
+  }
+
+  svg.hint {
+    left: 0;
+  }
+
+  svg.warning {
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &.has-error {
+    &:after {
+      background-color: $red;
+    }
+
+    .warning {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    input {
+      padding-right: 3em;
+    }
+  }
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  transition: background-color 0.5s;
+  cursor: pointer;
+
+  label {
+    pointer-events: none;
+  }
+}
+
+button.is-dark {
+  color: #FFF;
+  background-color: $blue;
+
+  &:hover:not([disabled]) {
+    box-shadow: 0 0 0.3em 0.2em rgba(#FFF, 0.15);
+    background-color: lighten($blue, 5%);
+  }
+}
+
+button[disabled] {
+  background-color: #777;
+  cursor: default;
+}
+
+button.is-processing label {
+  visibility: hidden;
+}
+
+button.is-processing:after {
+  box-sizing: border-box;
+  content: '';
+  position: absolute;
+  top: $default-spacing;
+  left: 50%;
+  display: block;
+  width: $size-medium;
+  height: $size-medium;
+  margin-left: -#{$size-medium / 2};
+  border-radius: 50%;
+  border: 0.3em solid rgba(#FFF, 0.2);
+  border-top-color: #FFF;
+  animation: spin 1.5s linear infinite;
+}
+
+@include mobile {
+  button {
+    width: 100%;
+  }
+}
+
+@include tablet {
+  button {
+    width: auto;
+  }
+
+  ::-webkit-input-placeholder {
+    transition: left 0.3s, padding-right 0.3s, opacity 0.3s;
+  }
+
+  :focus::-webkit-input-placeholder {
+    position: relative;
+    left: -100%;
+    padding-right: 5em;
+    opacity: 1;
+    text-align: right;
+  }
+}
+

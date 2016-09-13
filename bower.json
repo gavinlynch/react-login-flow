@@ -1,0 +1,19 @@
+{
+  "name": "apple",
+  "description": "apple login demo app",
+  "main": "index.js",
+  "authors": [
+    "gavin <gavin.lynch@jwt.com>"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "normalize-css": "normalize.css#^4.2.0",
+    "jquery.tipsy": "*"
+  }
+}

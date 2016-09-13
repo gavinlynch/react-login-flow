@@ -1,0 +1,47 @@
+/**
+ * Colors
+ */
+$gray: #999;
+$gray-light: #666;
+$gray-faint: #EEE;
+
+$teal: #5AC8FA;
+$blue: #007AFF;
+$green: #4CD964;
+$red: #E8695D;
+
+/**
+ * Fonts
+ */
+$font-primary: San Francisco, Helvetica, sans-serif;
+
+/**
+ * Sizes are REM units, which are controlled by the RootEM value set in * src/layout.scss.
+ */
+$size-smaller: 1.00rem;
+$size-small: 1.25rem;
+$size-normal: 1.50rem;
+$size-medium: 1.75rem;
+$size-mediumer: 2.00rem;
+$size-large: 2.25rem;
+$size-larger: 3.00rem;
+$size-huge: 4.00rem;
+$size-huger: 5.00rem;
+
+/**
+ * Responsive dimensions
+ */
+$tablet: 768px;
+$desktop: 980px;
+$widescreen: 1180px;
+
+/**
+ * Layout dimensions
+ */
+$default-spacing: 1em;
+$page-width: 90%;
+$page-width-tablet: 80%;
+$page-width-desktop: 80%;
+$page-gutter: #{(100% - $page-width) / 2};
+$page-gutter-tablet: #{(100% - $page-width-tablet) / 2};
+$page-gutter-desktop: #{(100% - $page-width-desktop) / 2};
