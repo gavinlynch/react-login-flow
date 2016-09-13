@@ -10,7 +10,7 @@ bower_components
 # Auto build assets
 public/css/build
 public/js/build
-public/assets/sprites.html
+public/assets/sprites.*
 # Compiled CSS and JS map files
 *.css.map
 *.js.map
