@@ -33,6 +33,17 @@ The app consistent of three main views:
 - [Not Authorized view](http://localhost:8080/not-authorized): A splash page warning the user they are not authorized to view the content they were seeking.
 - [Greetings view](http://localhost:8080/greetings): An authorization-protected URL, which shows some dummy info to the user. This is only reachable if the `activeUser.loggedIn` property is set to True.
 
+## Screenshots
+
+Login:
+![Login Page](https://github.com/gavinlynch/react-login-flow/blob/master/docs/page-login.png?raw=true "Login Page")
+
+Not Authorized:
+![Not Authorized Page](https://github.com/gavinlynch/react-login-flow/blob/master/docs/page-not-authorized.png?raw=true "Not Authorized Page")
+
+Greetings:
+![Greetings Page](https://github.com/gavinlynch/react-login-flow/blob/master/docs/page-greetings.png?raw=true "Greetings Page")
+
 # TODO
 Everything? A few things left to do...
 

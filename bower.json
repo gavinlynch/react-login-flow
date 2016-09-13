@@ -1,9 +1,9 @@
 {
-  "name": "apple",
-  "description": "apple login demo app",
+  "name": "react-login-flow",
+  "description": "react login flow",
   "main": "index.js",
   "authors": [
-    "gavin <gavin.lynch@jwt.com>"
+    "gavin brady lynch <gavin.b.lynch@gmail.com>"
   ],
   "homepage": "",
   "ignore": [

@@ -1,7 +1,7 @@
 {
-  "name": "apple",
+  "name": "react-login-flow",
   "version": "1.0.0",
-  "description": "apple login demo app",
+  "description": "react login flow",
   "main": "index.js",
   "scripts": {
     "postinstall": "./node_modules/bower/bin/bower install",
