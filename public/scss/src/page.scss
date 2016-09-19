@@ -17,6 +17,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100vh;
+  overflow: hidden;
   color: #FFF;
   background: linear-gradient(45deg, #0E0438 0%, #3AA4B2 41%, #44F2D7 81%);
 }
@@ -89,11 +91,6 @@ a:active, a:hover {
 }
 
 @include tablet {
-  body {
-    height: 100vh;
-    overflow: hidden;
-  }
-
   main  {
     width: $page-width-tablet;
   }

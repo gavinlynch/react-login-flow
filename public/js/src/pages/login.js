@@ -3,6 +3,12 @@ import { applyUserComposition } from 'src/components/page';
 import { LoginForm } from 'src/components/form';
 
 class LoginPage extends React.Component {
+  static get propTypes () {
+    return {
+      userActions: React.PropTypes.object.isRequired
+    };
+  }
+
   render () {
     return (
       <article id="page-login">

@@ -106,7 +106,10 @@ class LoginFormComponent extends React.Component {
     return {
       toRoute: React.PropTypes.string.isRequired,
       isValid: React.PropTypes.bool,
-      minInputLength: React.PropTypes.number
+      minInputLength: React.PropTypes.number,
+      formActions: React.PropTypes.object,
+      userActions: React.PropTypes.object,
+      form: React.PropTypes.object
     };
   }
 
@@ -131,7 +134,6 @@ class LoginFormComponent extends React.Component {
     this.refs.formEl.querySelector('button').addEventListener(
         'click', this.onSubmit.bind(this));
     // when the user enters username/passsword
-    var t = this.refs.formEl.querySelectorAll('input');
     [].forEach.call(this.refs.formEl.querySelectorAll('input'),
         (el) => el.addEventListener('keyup', this.onKeyUp.bind(this)));
   }

@@ -41,7 +41,6 @@ module.exports = function (grunt, options) {
       ),
       // jQuery should be available to all dependencies
       new webpack.ProvidePlugin({
-        $: 'jquery',
         jQuery: 'jquery',
         'window.jQuery': 'jquery'
       })

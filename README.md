@@ -9,6 +9,7 @@ Bucket o' tech used:
 - `Bower` with an example of integrating legacy UI plugins like jQuery
 - `React` + `Redux` + `React-Router`, with an example of composition with React components
 - `SASS` + `PostCSS`, with SVG sprites for scalable and CSS-styled assets and a typography-based `responsive` scheme (REM in conjunction with ViewportWidth + @media queries)
+- `ESLint` with some generic settings for ES6 + React
 
 ## Installation
 Clone the repository or unzip the project. Navigate to the root of the project and run:

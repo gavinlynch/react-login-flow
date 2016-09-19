@@ -23,9 +23,6 @@ export let reducers = {
   activeUser (state = initialState, action) {
     switch (action.type) {
     case 'SET_LOGIN_STATUS':
-      console.warn('new user state', Object.assign({}, state, {
-        loggedIn: action.loggedIn
-      }));
       return Object.assign({}, state, {
         loggedIn: action.loggedIn
       });
@@ -73,6 +70,10 @@ const mapDispatchToProps = (dispatch) => {
  */
 export let applyUserComposition = function (ChildComponent) {
   let ComposedComponent = class extends React.Component {
+    static get displayName () {
+      return 'UserComponent';
+    }
+
     /**
      * Check authorization on component mounting
      */

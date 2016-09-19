@@ -36,12 +36,14 @@ module.exports = function (env) {
     }
   };
 
-  config.dev = Object.assign({}, DEFAULT);
+  config.local = Object.assign({}, DEFAULT);
+
   /*
-  TODO: stage and prod config
+  TODO: dev, stage and prod config
+  var config.dev = Object.assign({}, DEFUALT);
   var config.stage = Object.assign({}, DEFUALT);
   var config.prod = Object.assign({}, DEFUALT);
   */
 
-  return config[env ? env : 'dev'];
+  return config[(env in DEFAULT) ? env : 'local'];
 };

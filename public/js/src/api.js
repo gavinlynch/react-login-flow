@@ -9,7 +9,7 @@ class API {
   /**
    * API is a singleton
    */
-  constructor (store) {
+  constructor () {
     if (!instance) {
       instance = this;
     }
@@ -64,7 +64,7 @@ class API {
       httpRequest.onreadystatechange = () => {
         if (httpRequest.readyState === XMLHttpRequest.DONE) {
           return (httpRequest.status === 200) ?
-              resolve(httpRequest.responseText) : reject('Error');
+              resolve(httpRequest.responseText) : reject('Error')
         }
       }
 

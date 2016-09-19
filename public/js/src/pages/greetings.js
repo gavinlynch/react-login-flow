@@ -1,10 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router';
 import { applyUserComposition } from 'src/components/page';
-
 import Button from 'src/components/button';
 
 class GreetingsPage extends React.Component {
+  static get propTypes () {
+    return {
+      userActions: React.PropTypes.object.isRequired,
+      activeUser: React.PropTypes.object.isRequired
+    };
+  }
+
   /**
    * Set up events after view has mounted to DOM.
    */
@@ -54,7 +59,7 @@ class GreetingsPage extends React.Component {
           </p>
 
           <div className="tray">
-            <Button label="Logout" theme="dark" onClick={this.onClick} />
+            <Button label="Logout" theme="dark" />
           </div>
         </section>
       </article>);

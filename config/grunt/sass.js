@@ -3,7 +3,7 @@ module.exports = function (grunt, options) {
     options: {
       includePaths: [options.ROOT_DIR + '/bower_components/']
     },
-    dev: {
+    local: {
       options: {
         sourceMap: true,
         outputStyle: 'expanded'

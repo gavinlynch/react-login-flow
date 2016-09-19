@@ -1,5 +1,6 @@
 import React from 'react';
-import Tipsy from 'jquery.tipsy';
+import $ from 'jquery';
+import 'jquery.tipsy';
 
 /**
  * Component that manages user input and validation.
